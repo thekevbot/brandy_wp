@@ -43,6 +43,11 @@ hr{
     background-color:#BBB0A6;
 }
 
+ul{
+    margin-top:0;
+    margin-bottom:0;
+}
+
 .alignleft{
     text-align:left;
 }
@@ -61,6 +66,15 @@ hr{
     width:100%;
     max-width:1180px;
     margin:0 auto;
+}
+
+.content{
+    width:90%;
+    margin:0 auto;
+}
+
+.content.narrow{
+    max-width:960px;
 }
 
 /*** COMPONENTS ***/
@@ -164,11 +178,13 @@ header{
 }
 
 .main-nav-wrapper{
+    padding:60px 0;
     position:relative;
 }
 
 .main-nav-wrapper .social-nav{
     position:absolute;
+    top:35px;
     left:0;
     z-index:1;
     font-size:18px;
@@ -176,6 +192,7 @@ header{
 
 #client-login{
     position:absolute;
+    top:30px;
     right:0;
     z-index:1;
 }
