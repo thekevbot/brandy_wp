@@ -245,6 +245,29 @@ img{
     padding-right: 5px;
     padding-left: 5px;
     position: relative;
+    .insta-meta{
+        width: calc(100% - 10px);
+        height: calc(100% - 13px);
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        background-color:$sand-opaque;
+        opacity:0;
+        transition:all 0.2s ease-in-out;
+        .icon{
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            font-size:32px;
+            color:$white;
+        }
+    }
+    &:hover{
+        .insta-meta{
+            opacity:1;
+        }
+    }
   }
   &.col-5 a {
     width: 20%;

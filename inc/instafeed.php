@@ -10,6 +10,6 @@
     $results_array = scrape_insta($my_account);
     for($cnt=0; $cnt < $pull_cnt; $cnt++){
         $latest_array = $results_array['entry_data']['ProfilePage'][0]['user']['media']['nodes'][$cnt];
-        echo '<a href="http://instagram.com/p/'.$latest_array['code'].'"><img src="'.$latest_array['display_src'].'"></a>';
+        echo '<a href="http://instagram.com/p/'.$latest_array['code'].'"><!--<div class="insta-meta"><i class="icon icon-view"></i></div>--><img src="'.$latest_array['display_src'].'" target="_blank"></a>';
     }
 ?>

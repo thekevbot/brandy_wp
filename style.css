@@ -583,17 +583,41 @@ img.aligncenter {
   padding-left: 5px;
   position: relative;
 }
-/* line 249, stylesheets/_partials/_universal.scss */
+/* line 248, stylesheets/_partials/_universal.scss */
+.insta-feed a .insta-meta {
+  width: calc(100% - 10px);
+  height: calc(100% - 13px);
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(187, 176, 166, 0.8);
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+/* line 257, stylesheets/_partials/_universal.scss */
+.insta-feed a .insta-meta .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+  color: #fff;
+}
+/* line 267, stylesheets/_partials/_universal.scss */
+.insta-feed a:hover .insta-meta {
+  opacity: 1;
+}
+/* line 272, stylesheets/_partials/_universal.scss */
 .insta-feed.col-5 a {
   width: 20%;
   padding-top: 20%;
 }
-/* line 253, stylesheets/_partials/_universal.scss */
+/* line 276, stylesheets/_partials/_universal.scss */
 .insta-feed.col-2 a {
   width: 50%;
   padding-top: 50%;
 }
-/* line 257, stylesheets/_partials/_universal.scss */
+/* line 280, stylesheets/_partials/_universal.scss */
 .insta-feed a img {
   width: 95%;
   position: absolute;
@@ -603,17 +627,17 @@ img.aligncenter {
 }
 
 /* Logo Lists */
-/* line 269, stylesheets/_partials/_universal.scss */
+/* line 292, stylesheets/_partials/_universal.scss */
 .logo-list .wrapper-inner {
   padding: 0 30px;
 }
 
 /* Articles */
-/* line 276, stylesheets/_partials/_universal.scss */
+/* line 299, stylesheets/_partials/_universal.scss */
 article {
   margin-bottom: 60px;
 }
-/* line 278, stylesheets/_partials/_universal.scss */
+/* line 301, stylesheets/_partials/_universal.scss */
 article .featured-img {
   width: 100%;
   height: 0;
@@ -621,7 +645,7 @@ article .featured-img {
   overflow: hidden;
   position: relative;
 }
-/* line 284, stylesheets/_partials/_universal.scss */
+/* line 307, stylesheets/_partials/_universal.scss */
 article .featured-img img {
   width: 100%;
   min-height: 100%;
