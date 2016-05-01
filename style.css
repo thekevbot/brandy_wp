@@ -184,22 +184,32 @@ FONTS
   content: "\66";
 }
 
+/* line 73, stylesheets/_partials/_typography.scss */
+.icon-view:before {
+  content: "\67";
+}
+
+/* line 76, stylesheets/_partials/_typography.scss */
+.icon-zoom:before {
+  content: "\68";
+}
+
 /*=============================
 TYPOGRAPHY
 =============================*/
-/* line 78, stylesheets/_partials/_typography.scss */
+/* line 84, stylesheets/_partials/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-/* line 82, stylesheets/_partials/_typography.scss */
+/* line 88, stylesheets/_partials/_typography.scss */
 h1, h2 {
   font-family: 'Kat Tail';
   font-size: 60px;
   color: #ddbcb0;
 }
 
-/* line 88, stylesheets/_partials/_typography.scss */
+/* line 94, stylesheets/_partials/_typography.scss */
 h3 {
   margin-top: 0;
   font-family: 'Raleway';
@@ -209,7 +219,7 @@ h3 {
   font-weight: 400;
   color: #ddbcb0;
 }
-/* line 96, stylesheets/_partials/_typography.scss */
+/* line 102, stylesheets/_partials/_typography.scss */
 h3.script {
   font-family: 'Kat Tail';
   font-size: 48px;
@@ -217,7 +227,7 @@ h3.script {
   letter-spacing: 0;
 }
 
-/* line 107, stylesheets/_partials/_typography.scss */
+/* line 113, stylesheets/_partials/_typography.scss */
 h5 {
   font-family: 'Raleway';
   font-size: 20px;
@@ -227,7 +237,7 @@ h5 {
   color: #767662;
 }
 
-/* line 116, stylesheets/_partials/_typography.scss */
+/* line 122, stylesheets/_partials/_typography.scss */
 h6 {
   font-family: 'Raleway';
   font-size: 16px;
@@ -237,7 +247,7 @@ h6 {
   color: #ddbcb0;
 }
 
-/* line 125, stylesheets/_partials/_typography.scss */
+/* line 131, stylesheets/_partials/_typography.scss */
 p {
   font-family: 'Libre Baskerville';
   font-size: 18px;
@@ -245,7 +255,7 @@ p {
   color: #767662;
 }
 
-/* line 134, stylesheets/_partials/_typography.scss */
+/* line 140, stylesheets/_partials/_typography.scss */
 hr {
   width: 80%;
   height: 2px;
@@ -254,29 +264,29 @@ hr {
   background-color: #BBB0A6;
 }
 
-/* line 142, stylesheets/_partials/_typography.scss */
+/* line 148, stylesheets/_partials/_typography.scss */
 ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 147, stylesheets/_partials/_typography.scss */
+/* line 153, stylesheets/_partials/_typography.scss */
 .alignleft {
   text-align: left;
 }
 
-/* line 151, stylesheets/_partials/_typography.scss */
+/* line 157, stylesheets/_partials/_typography.scss */
 .aligncenter {
   text-align: center;
 }
 
-/* line 155, stylesheets/_partials/_typography.scss */
+/* line 161, stylesheets/_partials/_typography.scss */
 .alignright {
   text-align: right;
 }
 
 /* Template Typography */
-/* line 161, stylesheets/_partials/_typography.scss */
+/* line 167, stylesheets/_partials/_typography.scss */
 h1.page-head {
   margin: 0;
   padding: 4px;
@@ -285,7 +295,7 @@ h1.page-head {
   font-weight: 300;
   color: #fff;
 }
-/* line 168, stylesheets/_partials/_typography.scss */
+/* line 174, stylesheets/_partials/_typography.scss */
 h1.page-head span {
   width: 100%;
   height: 100%;
