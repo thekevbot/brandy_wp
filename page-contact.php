@@ -1,9 +1,15 @@
-<?php require_once('header.php'); ?>
+<?php
+/**
+* Template Name: Contact
+*/
+ ?>
+
+<?php get_header(); ?>
 
     <section class="container">
         <div class="banner">
             <h1 class="page-head"><span>Say Hello</span></h1>
-            <img src="img/banner-contact.jpg" alt=""/>
+            <img src="<?php bloginfo('template_directory'); ?>/img/banner-contact.jpg" alt=""/>
         </div>
         <div class="row">
             <h3 class="aligncenter" style="margin-bottom:60px;">We can't wait to hear from you!</h3>
@@ -16,7 +22,7 @@
                     <li><i class="icon icon-phone lg"></i>250.319.4651</li>
                     <li><i class="icon icon-mail lg"></i><a href="mailto:info@brandymaddisonevents.com">info@brandymaddisonevents.com</a></li>
                 </ul>
-                <img class="aligncenter" src="img/logo-lbb.png" alt="Little Black Book Member 2016" style="width:100%; max-width:275px; margin-top:60px;" />
+                <img class="aligncenter" src="<?php bloginfo('template_directory'); ?>/img/logo-lbb.png" alt="Little Black Book Member 2016" style="width:100%; max-width:275px; margin-top:60px;" />
             </div>
             <div class="col-md-7">
                 <form class="form-base" id="c-form" action="" validate>
@@ -90,4 +96,4 @@
         </div>
     </section>
 
-<?php require_once('footer.php'); ?>
+<?php get_footer(); ?>

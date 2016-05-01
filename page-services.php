@@ -1,9 +1,15 @@
-<?php require_once('header.php'); ?>
+<?php
+/**
+* Template Name: Services
+*/
+ ?>
+
+<?php get_header(); ?>
 
     <section class="container">
         <div class="banner">
             <h1 class="page-head"><span>Services</span></h1>
-            <img src="img/banner-services.jpg" alt=""/>
+            <img src="<?php bloginfo('template_directory'); ?>/img/banner-services.jpg" alt=""/>
         </div>
         <div class="row">
             <div class="content extra-narrow aligncenter"  style="margin-bottom:60px;">
@@ -14,28 +20,28 @@
         <div class="row">
             <div class="col-md-3 aligncenter service">
                 <div class="crop portrait">
-                    <img src="img/service-1.jpg" alt="" />
+                    <img src="<?php bloginfo('template_directory'); ?>/img/service-1.jpg" alt="" />
                 </div>
                 <h6 class="dark">Day of Coordination</h6>
                 <a class="btn btn-gold" href="#"><span>View Details</span></a>
             </div>
             <div class="col-md-3 aligncenter service">
                 <div class="crop portrait">
-                    <img src="img/service-2.jpg" alt="" />
+                    <img src="<?php bloginfo('template_directory'); ?>/img/service-2.jpg" alt="" />
                 </div>
                 <h6 class="dark">Full Planning Service</h6>
                 <a class="btn btn-gold" href="#"><span>View Details</span></a>
             </div>
             <div class="col-md-3 aligncenter service">
                 <div class="crop portrait">
-                    <img src="img/service-3.jpg" alt="" />
+                    <img src="<?php bloginfo('template_directory'); ?>/img/service-3.jpg" alt="" />
                 </div>
                 <h6 class="dark">Design &amp; Decor</h6>
                 <a class="btn btn-gold" href="#"><span>View Details</span></a>
             </div>
             <div class="col-md-3 aligncenter service">
                 <div class="crop portrait">
-                    <img src="img/service-4.jpg" alt="" />
+                    <img src="<?php bloginfo('template_directory'); ?>/img/service-4.jpg" alt="" />
                 </div>
                 <h6 class="dark">Florals</h6>
                 <a class="btn btn-gold" href="#"><span>View Details</span></a>
@@ -51,4 +57,4 @@
         </div>
     </section>
 
-<?php require_once('footer.php'); ?>
+<?php get_footer(); ?>

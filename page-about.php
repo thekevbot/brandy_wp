@@ -1,9 +1,15 @@
-<?php require_once('header.php'); ?>
+<?php
+/**
+* Template Name: About
+*/
+ ?>
+
+<?php get_header(); ?>
 
     <section class="container">
         <div class="banner">
             <h1 class="page-head"><span>About Us</span></h1>
-            <img src="img/banner-about-1.jpg" alt=""/>
+            <img src="<?php bloginfo('template_directory'); ?>/img/banner-about-1.jpg" alt=""/>
         </div>
         <div class="row">
             <h3 class="aligncenter" style="margin-bottom:60px;">Hello Incredible You!</h3>
@@ -11,7 +17,7 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="mobile-crop circle">
-                    <img class="fw" src="img/brandy-maddison.jpg" alt="Brandy Maddison"/>
+                    <img class="fw" src="<?php bloginfo('template_directory'); ?>/img/brandy-maddison.jpg" alt="Brandy Maddison"/>
                 </div>
             </div>
             <div class="col-md-8">
@@ -29,14 +35,14 @@
                 <h3 style="margin-bottom:60px;">Our Grateful Features</h3>
                 <div class="logo-list wrapper" style="margin-bottom:60px;">
                     <div class="wrapper-inner">
-                        <img class="fw" src="img/logo-adore.png" alt="Adore Okanagen Wedding &amp; Style Magazine"/>
+                        <img class="fw" src="<?php bloginfo('template_directory'); ?>/img/logo-adore.png" alt="Adore Okanagen Wedding &amp; Style Magazine"/>
                     </div>
                     <div class="wrapper-inner">
-                        <img class="fw" src="img/logo-smp.png" alt="Style Me Pretty"/>
+                        <img class="fw" src="<?php bloginfo('template_directory'); ?>/img/logo-smp.png" alt="Style Me Pretty"/>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-<?php require_once('footer.php'); ?>
+<?php get_footer(); ?>

@@ -3,8 +3,9 @@
 <head>
     <title>Brandy Maddison Events</title>
 
-    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
-    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" rel="stylesheet">
+    <?php wp_head(); ?>
 </head>
 <body>
     <header>
@@ -18,23 +19,15 @@
             <a class="btn btn-gold btn-xs" id="client-login" href="#"><span>Client Login</span></a>
             <ul class="main-nav">
                 <li class="nav-cell nav-left">
-                    <ul>
-                        <li><a href="page-about.php">About Us</a></li>
-                        <li><a href="page-portfolio.php">Portfolio</a></li>
-                        <li><a href="page-services.php">Services</a></li>
-                    </ul>
+                    <?php wp_nav_menu( array( 'theme_location' => 'menu-left', 'menu_id' => 'menu-left') ); ?>
                 </li>
                 <li class="nav-cell nav-logo">
-                    <a href="page-home.php">
-                        <img src="img/logo-bme.svg" alt="Brandy Maddison Events"/>
+                    <a href="<?php echo home_url(); ?>">
+                        <img src="<?php bloginfo('template_directory'); ?>/img/logo-bme.svg" alt="Brandy Maddison Events"/>
                     </a>
                 </li>
                 <li class="nav-cell nav-right">
-                    <ul>
-                        <li><a href="page-testimonials.php">Kind Words</a></li>
-                        <li><a href="page-contact.php">Say Hello</a></li>
-                        <li><a href="page-journal.php">Journal</a></li>
-                    </ul>
+                    <?php wp_nav_menu( array( 'theme_location' => 'menu-right', 'menu_id' => 'menu-right') ); ?>
                 </li>
                 <li class="btn-mobile-menu"><a href="javascript:;">Menu</a></li>
             </ul>

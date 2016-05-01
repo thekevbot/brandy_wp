@@ -1,12 +1,18 @@
-<?php require_once('header.php'); ?>
+<?php
+/**
+* Template Name: Home
+*/
+ ?>
+
+<?php get_header(); ?>
 
     <section class="container aligncenter">
         <div class="banner banner-slider">
             <ul>
-                <li><img src="img/banner-home-1.jpg" alt=""/></li>
-                <li><img src="img/banner-home-2.jpg" alt=""/></li>
-                <li><img src="img/banner-home-3.jpg" alt=""/></li>
-                <li><img src="img/banner-home-4.jpg" alt=""/></li>
+                <li><img src="<?php bloginfo('template_directory'); ?>/img/banner-home-1.jpg" alt=""/></li>
+                <li><img src="<?php bloginfo('template_directory'); ?>/img/banner-home-2.jpg" alt=""/></li>
+                <li><img src="<?php bloginfo('template_directory'); ?>/img/banner-home-3.jpg" alt=""/></li>
+                <li><img src="<?php bloginfo('template_directory'); ?>/img/banner-home-4.jpg" alt=""/></li>
             </ul>
         </div>
         <div class="row">
@@ -39,9 +45,9 @@
             <h3>The Latest on Instagram</h3>
             <div class="insta-feed col-5">
                 <?php $pull_cnt = 5; ?>
-                <?php require_once 'inc/instafeed.php'; ?>
+                <?php require_once( trailingslashit( get_template_directory() ). 'inc/instafeed.php' ); ?>
             </div>
         </div>
     </section>
 
-<?php require_once('footer.php'); ?>
+<?php get_footer(); ?>

@@ -1,4 +1,10 @@
-<?php require_once('header.php'); ?>
+<?php
+/**
+* Template Name: Journal
+*/
+ ?>
+
+<?php get_header(); ?>
 
     <section class="container">
         <div class="row">
@@ -12,7 +18,7 @@
                         </ul>
                     </div>
                     <div class="featured-img">
-                        <img src="img/featured-placeholder.jpg" alt=""/>
+                        <img src="<?php bloginfo('template_directory'); ?>/img/featured-placeholder.jpg" alt=""/>
                     </div>
                     <p>This experience with Homes For The Holiday was seriously so incredible!! I got to decorate the most amazing home this holiday season all because of Homes for the Holidays Kamloops a wonderful fundraiser for United Way. These home tours have been such a popular event for me. I have gone for the least 6 years and it truly has been so inspiring...</p>
                     <div class="aligncenter">
@@ -28,7 +34,7 @@
                         </ul>
                     </div>
                     <div class="featured-img">
-                        <img src="img/featured-placeholder.jpg" alt=""/>
+                        <img src="<?php bloginfo('template_directory'); ?>/img/featured-placeholder.jpg" alt=""/>
                     </div>
                     <p>This experience with Homes For The Holiday was seriously so incredible!! I got to decorate the most amazing home this holiday season all because of Homes for the Holidays Kamloops a wonderful fundraiser for United Way. These home tours have been such a popular event for me. I have gone for the least 6 years and it truly has been so inspiring...</p>
                     <div class="aligncenter">
@@ -37,7 +43,7 @@
                 </article>
             </div>
             <div class="col-md-3 sidebar">
-                <img class="fw" src="img/brandy-maddison.jpg" alt="Brandy Maddison"/>
+                <img class="fw" src="<?php bloginfo('template_directory'); ?>/img/brandy-maddison.jpg" alt="Brandy Maddison"/>
                 <h3 class="script" style="margin-top:30px;">Meet Brandy</h3>
                 <p>Brandy Maddison Events specializes in creating beautiful and romantic spaces with a purpose adding unique touches that make your wedding day all about you!</p>
                 <a class="btn btn-gold btn-block" href="#"><span>Learn More</span></a>
@@ -50,7 +56,7 @@
                 <h6 class="aligncenter">The Latest on Instagram</h6>
                 <div class="insta-feed col-2">
                     <?php $pull_cnt = 4; ?>
-                    <?php require_once 'inc/instafeed.php'; ?>
+                    <?php require_once( trailingslashit( get_template_directory() ). 'inc/instafeed.php' ); ?>
                 </div>
                 <h6 class="aligncenter">Categories</h6>
                 <ul class="categories">
@@ -63,4 +69,4 @@
         </div>
     </section>
 
-<?php require_once('footer.php'); ?>
+<?php get_footer(); ?>

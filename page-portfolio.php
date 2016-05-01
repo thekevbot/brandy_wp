@@ -1,9 +1,15 @@
-<?php require_once('header.php'); ?>
+<?php
+/**
+* Template Name: Portfolio
+*/
+ ?>
+
+<?php get_header(); ?>
 
     <section class="container">
         <div class="banner">
             <h1 class="page-head"><span>Portfolio</span></h1>
-            <img src="img/banner-portfolio.jpg" alt=""/>
+            <img src="<?php bloginfo('template_directory'); ?>/img/banner-portfolio.jpg" alt=""/>
         </div>
         <div class="row">
             <div class="col-md-4">
@@ -17,7 +23,7 @@
                         </div>
                     </div>
                     <div class="crop square">
-                        <img src="img/portfolio-1.jpg" alt="#" />
+                        <img src="<?php bloginfo('template_directory'); ?>/img/portfolio-1.jpg" alt="#" />
                     </div>
                 </a>
             </div>
@@ -32,7 +38,7 @@
                         </div>
                     </div>
                     <div class="crop square">
-                        <img src="img/portfolio-2.jpg" alt="#" />
+                        <img src="<?php bloginfo('template_directory'); ?>/img/portfolio-2.jpg" alt="#" />
                     </div>
                 </a>
             </div>
@@ -47,7 +53,7 @@
                         </div>
                     </div>
                     <div class="crop square">
-                        <img src="img/portfolio-3.jpg" alt="#" />
+                        <img src="<?php bloginfo('template_directory'); ?>/img/portfolio-3.jpg" alt="#" />
                     </div>
                 </a>
             </div>
@@ -62,7 +68,7 @@
                         </div>
                     </div>
                     <div class="crop square">
-                        <img src="img/portfolio-4.jpg" alt="#" />
+                        <img src="<?php bloginfo('template_directory'); ?>/img/portfolio-4.jpg" alt="#" />
                     </div>
                 </a>
             </div>
@@ -77,7 +83,7 @@
                         </div>
                     </div>
                     <div class="crop square">
-                        <img src="img/portfolio-5.jpg" alt="#" />
+                        <img src="<?php bloginfo('template_directory'); ?>/img/portfolio-5.jpg" alt="#" />
                     </div>
                 </a>
             </div>
@@ -92,7 +98,7 @@
                         </div>
                     </div>
                     <div class="crop square">
-                        <img src="img/portfolio-6.jpg" alt="#" />
+                        <img src="<?php bloginfo('template_directory'); ?>/img/portfolio-6.jpg" alt="#" />
                     </div>
                 </a>
             </div>
@@ -106,4 +112,4 @@
         </div>
     </section>
 
-<?php require_once('footer.php'); ?>
+<?php get_footer(); ?>
