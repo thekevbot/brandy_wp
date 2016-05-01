@@ -6,39 +6,40 @@
 
 <?php get_header(); ?>
 
+<?php if (have_posts()) : ?>
+<?php while (have_posts()) : the_post(); ?>
+
     <section class="container aligncenter">
         <div class="banner banner-slider">
             <ul>
-                <li><img src="<?php bloginfo('template_directory'); ?>/img/banner-home-1.jpg" alt=""/></li>
-                <li><img src="<?php bloginfo('template_directory'); ?>/img/banner-home-2.jpg" alt=""/></li>
-                <li><img src="<?php bloginfo('template_directory'); ?>/img/banner-home-3.jpg" alt=""/></li>
-                <li><img src="<?php bloginfo('template_directory'); ?>/img/banner-home-4.jpg" alt=""/></li>
+                <?php
+                    if( have_rows('hero_carousel') ):
+                    while( have_rows('hero_carousel') ) : the_row();
+                        echo '<li><img src="' . get_sub_field('image') . '" alt=""/></li>';
+                    endwhile;
+                    endif;
+                ?>
             </ul>
         </div>
         <div class="row">
             <div class="content narrow">
-                <h2>Welcome Beautiful You!</h2>
-                <p>With a lot of heart &amp; a dream to create something beautiful, Brandy Maddison Event Planning &amp; Design launched in 2013. We are a boutique event planning and design studio; specializing in weddings and floral artistry. You will find us right here in Kamloops, BC serving all surrounding areas and available for travel anywhere in this incredible world of ours.</p>
-                <a class="btn btn-gold aligncenter" href="#" style="margin-top:30px;"><span>Learn More</span></a>
+                <h2><?php the_field('subtitle'); ?></h2>
+                <?php the_content(); ?>
+                <a class="btn btn-gold aligncenter" href="<?php the_field('cta_link');?>" style="margin-top:30px;"><span><?php the_field('cta_text');?></span></a>
             </div>
         </div>
         <hr>
         <div class="row">
+            <?php
+                if( have_rows('large_buttons') ):
+                while( have_rows('large_buttons') ) : the_row();
+            ?>
             <div class="col-md-4">
-                <a class="btn btn-gold btn-block btn-xl" href="#">
-                    <span>View Our <em>Portfolio</em></span>
+                <a class="btn btn-gold btn-block btn-xl" href="<?php the_sub_field('page_link');?>">
+                    <span><?php the_sub_field('small_text');?> <em><?php the_sub_field('large_text');?></em></span>
                 </a>
             </div>
-            <div class="col-md-4">
-                <a class="btn btn-gold btn-block btn-xl" href="#">
-                    <span>Learn About Our <em>Services</em></span>
-                </a>
-            </div>
-            <div class="col-md-4">
-                <a class="btn btn-gold btn-block btn-xl" href="#">
-                    <span>Latest From The <em>Journal</em></span>
-                </a>
-            </div>
+            <?php endwhile; endif; ?>
         </div>
         <hr>
         <div class="row">
@@ -49,5 +50,8 @@
             </div>
         </div>
     </section>
+
+<?php endwhile; ?>
+<?php endif; ?>
 
 <?php get_footer(); ?>

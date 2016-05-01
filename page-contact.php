@@ -6,21 +6,24 @@
 
 <?php get_header(); ?>
 
+<?php if (have_posts()) : ?>
+<?php while (have_posts()) : the_post(); ?>
+
     <section class="container">
         <div class="banner">
             <h1 class="page-head"><span>Say Hello</span></h1>
-            <img src="<?php bloginfo('template_directory'); ?>/img/banner-contact.jpg" alt=""/>
+            <?php $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
+            <img src="<?php echo $feat_image; ?>" alt="<?php the_title(); ?>"/>
         </div>
         <div class="row">
-            <h3 class="aligncenter" style="margin-bottom:60px;">We can't wait to hear from you!</h3>
+            <h3 class="aligncenter" style="margin-bottom:60px;"><?php the_field('subtitle');?></h3>
         </div>
         <div class="row">
             <div class="col-md-4">
-                <p>Now booking 2017 Weddings!  2016 is almost booked only a few spots left.  As a boutique event planning and design studio we choose to take on a limited number of events a year to ensure the very best for our lovely couples.</p>
-                <p>To inquire about our availability, pricing, or if you have any questions at all, please send us a message.</p>
+                <?php the_content(); ?>
                 <ul class="icon-list">
-                    <li><i class="icon icon-phone lg"></i>250.319.4651</li>
-                    <li><i class="icon icon-mail lg"></i><a href="mailto:info@brandymaddisonevents.com">info@brandymaddisonevents.com</a></li>
+                    <li><i class="icon icon-phone lg"></i><?php the_field('phone_number', 'option');?></li>
+                    <li><i class="icon icon-mail lg"></i><a href="mailto:<?php the_field('email', 'option');?>"><?php the_field('email', 'option');?></a></li>
                 </ul>
                 <img class="aligncenter" src="<?php bloginfo('template_directory'); ?>/img/logo-lbb.png" alt="Little Black Book Member 2016" style="width:100%; max-width:275px; margin-top:60px;" />
             </div>
@@ -95,5 +98,8 @@
             </div>
         </div>
     </section>
+
+<?php endwhile; ?>
+<?php endif; ?>
 
 <?php get_footer(); ?>
