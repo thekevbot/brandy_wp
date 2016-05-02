@@ -43,7 +43,7 @@
         </div>
         <hr>
         <div class="row">
-            <h3>The Latest on Instagram</h3>
+            <h3 style="margin-bottom:30px;">The Latest on Instagram</h3>
             <div class="insta-feed col-5">
                 <?php $pull_cnt = 5; ?>
                 <?php require_once( trailingslashit( get_template_directory() ). 'inc/instafeed.php' ); ?>

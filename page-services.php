@@ -12,7 +12,8 @@
     <section class="container">
         <div class="banner">
             <h1 class="page-head"><span>Services</span></h1>
-            <img src="<?php bloginfo('template_directory'); ?>/img/banner-services.jpg" alt=""/>
+            <?php $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
+            <img src="<?php echo $feat_image; ?>" alt="<?php the_title(); ?>"/>
         </div>
         <div class="row">
             <div class="content extra-narrow aligncenter"  style="margin-bottom:60px;">

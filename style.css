@@ -255,7 +255,16 @@ p {
   color: #767662;
 }
 
+/* line 138, stylesheets/_partials/_typography.scss */
+a {
+  color: #ddbcb0;
+}
 /* line 140, stylesheets/_partials/_typography.scss */
+a:hover {
+  color: #ddbcb0;
+}
+
+/* line 147, stylesheets/_partials/_typography.scss */
 hr {
   width: 80%;
   height: 2px;
@@ -264,29 +273,29 @@ hr {
   background-color: #BBB0A6;
 }
 
-/* line 148, stylesheets/_partials/_typography.scss */
+/* line 155, stylesheets/_partials/_typography.scss */
 ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 153, stylesheets/_partials/_typography.scss */
+/* line 160, stylesheets/_partials/_typography.scss */
 .alignleft {
   text-align: left;
 }
 
-/* line 157, stylesheets/_partials/_typography.scss */
+/* line 164, stylesheets/_partials/_typography.scss */
 .aligncenter {
   text-align: center;
 }
 
-/* line 161, stylesheets/_partials/_typography.scss */
+/* line 168, stylesheets/_partials/_typography.scss */
 .alignright {
   text-align: right;
 }
 
 /* Template Typography */
-/* line 167, stylesheets/_partials/_typography.scss */
+/* line 174, stylesheets/_partials/_typography.scss */
 h1.page-head {
   margin: 0;
   padding: 4px;
@@ -295,7 +304,7 @@ h1.page-head {
   font-weight: 300;
   color: #fff;
 }
-/* line 174, stylesheets/_partials/_typography.scss */
+/* line 181, stylesheets/_partials/_typography.scss */
 h1.page-head span {
   width: 100%;
   height: 100%;
@@ -568,14 +577,26 @@ img.aligncenter {
   color: #767662;
   font-weight: 300;
 }
+/* line 235, stylesheets/_partials/_universal.scss */
+.form-base .form-control {
+  border-radius: 0 !important;
+  border-color: #BBB0A6;
+  font-family: 'Libre Baskerville';
+  color: #767662;
+}
+/* line 240, stylesheets/_partials/_universal.scss */
+.form-base .form-control:focus {
+  outline: 0;
+  box-shadow: 0 0 8px rgba(221, 188, 176, 0.8);
+}
 
 /* Instagram Feed */
-/* line 239, stylesheets/_partials/_universal.scss */
+/* line 249, stylesheets/_partials/_universal.scss */
 .insta-feed {
   width: 100%;
   margin-bottom: 30px;
 }
-/* line 242, stylesheets/_partials/_universal.scss */
+/* line 252, stylesheets/_partials/_universal.scss */
 .insta-feed a {
   height: 0;
   display: inline-block;
@@ -583,7 +604,7 @@ img.aligncenter {
   padding-left: 5px;
   position: relative;
 }
-/* line 248, stylesheets/_partials/_universal.scss */
+/* line 258, stylesheets/_partials/_universal.scss */
 .insta-feed a .insta-meta {
   width: calc(100% - 10px);
   height: calc(100% - 13px);
@@ -594,7 +615,7 @@ img.aligncenter {
   opacity: 0;
   transition: all 0.2s ease-in-out;
 }
-/* line 257, stylesheets/_partials/_universal.scss */
+/* line 267, stylesheets/_partials/_universal.scss */
 .insta-feed a .insta-meta .icon {
   position: absolute;
   top: 50%;
@@ -603,21 +624,21 @@ img.aligncenter {
   font-size: 32px;
   color: #fff;
 }
-/* line 267, stylesheets/_partials/_universal.scss */
+/* line 277, stylesheets/_partials/_universal.scss */
 .insta-feed a:hover .insta-meta {
   opacity: 1;
 }
-/* line 272, stylesheets/_partials/_universal.scss */
+/* line 282, stylesheets/_partials/_universal.scss */
 .insta-feed.col-5 a {
   width: 20%;
   padding-top: 20%;
 }
-/* line 276, stylesheets/_partials/_universal.scss */
+/* line 286, stylesheets/_partials/_universal.scss */
 .insta-feed.col-2 a {
   width: 50%;
   padding-top: 50%;
 }
-/* line 280, stylesheets/_partials/_universal.scss */
+/* line 290, stylesheets/_partials/_universal.scss */
 .insta-feed a img {
   width: 95%;
   position: absolute;
@@ -627,17 +648,17 @@ img.aligncenter {
 }
 
 /* Logo Lists */
-/* line 292, stylesheets/_partials/_universal.scss */
+/* line 302, stylesheets/_partials/_universal.scss */
 .logo-list .wrapper-inner {
   padding: 0 30px;
 }
 
 /* Articles */
-/* line 299, stylesheets/_partials/_universal.scss */
+/* line 309, stylesheets/_partials/_universal.scss */
 article {
   margin-bottom: 60px;
 }
-/* line 301, stylesheets/_partials/_universal.scss */
+/* line 311, stylesheets/_partials/_universal.scss */
 article .featured-img {
   width: 100%;
   height: 0;
@@ -645,7 +666,7 @@ article .featured-img {
   overflow: hidden;
   position: relative;
 }
-/* line 307, stylesheets/_partials/_universal.scss */
+/* line 317, stylesheets/_partials/_universal.scss */
 article .featured-img img {
   width: 100%;
   min-height: 100%;
@@ -885,45 +906,50 @@ ul.main-nav li a {
 }
 /* line 17, stylesheets/_partials/_journal.scss */
 .article-head .categories {
+  display: inline-block;
   margin-left: 15px;
   padding-left: 15px;
+  border-left: 1px solid #767662;
+}
+/* line 22, stylesheets/_partials/_journal.scss */
+.article-head .categories a {
   display: inline-block;
+  margin-left: 7px;
   font-family: 'Libre Baskerville';
   font-size: 18px;
   color: #767662;
-  border-left: 1px solid #767662;
 }
-/* line 25, stylesheets/_partials/_journal.scss */
-.article-head .categories li {
-  display: inline;
+/* line 28, stylesheets/_partials/_journal.scss */
+.article-head .categories a:first-child {
+  margin-left: 2px;
 }
 
-/* line 31, stylesheets/_partials/_journal.scss */
+/* line 35, stylesheets/_partials/_journal.scss */
 .featured-img {
   margin-bottom: 30px;
 }
 
-/* line 35, stylesheets/_partials/_journal.scss */
+/* line 39, stylesheets/_partials/_journal.scss */
 .community {
   margin-top: 30px;
 }
-/* line 39, stylesheets/_partials/_journal.scss */
+/* line 43, stylesheets/_partials/_journal.scss */
 .community .social-nav li:first-child {
   font-family: 'Raleway';
   font-size: 18px;
   color: #ddbcb0;
   text-transform: uppercase;
 }
-/* line 46, stylesheets/_partials/_journal.scss */
+/* line 50, stylesheets/_partials/_journal.scss */
 .community .social-nav .social-btn {
   transform: translateY(5px);
 }
-/* line 48, stylesheets/_partials/_journal.scss */
+/* line 52, stylesheets/_partials/_journal.scss */
 .community .social-nav .social-btn .icon {
   font-size: 24px;
 }
 
-/* line 55, stylesheets/_partials/_journal.scss */
+/* line 59, stylesheets/_partials/_journal.scss */
 .comments {
   margin: 30px 0 60px 0;
   padding: 60px 0;

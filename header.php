@@ -11,12 +11,12 @@
     <header>
         <nav class="container main-nav-wrapper">
             <ul class="social-nav social-dark">
-                <li class="social-btn"><a href="#"><i class="icon icon-facebook"></i></a></li>
-                <li class="social-btn"><a href="#"><i class="icon icon-twitter"></i></a></li>
-                <li class="social-btn"><a href="#"><i class="icon icon-pinterest"></i></a></li>
-                <li class="social-btn"><a href="#"><i class="icon icon-instagram"></i></a></li>
+                <li class="social-btn"><a href="<?php the_field('facebook_url', 'option'); ?>"><i class="icon icon-facebook"></i></a></li>
+                <li class="social-btn"><a href="<?php the_field('twitter_url', 'option'); ?>"><i class="icon icon-twitter"></i></a></li>
+                <li class="social-btn"><a href="<?php the_field('pinterest_url', 'option'); ?>"><i class="icon icon-pinterest"></i></a></li>
+                <li class="social-btn"><a href="<?php the_field('instagram_url', 'option'); ?>"><i class="icon icon-instagram"></i></a></li>
             </ul>
-            <a class="btn btn-gold btn-xs" id="client-login" href="#"><span>Client Login</span></a>
+            <a class="btn btn-gold btn-xs" id="client-login" href="<?php the_field('client_login_url', 'option'); ?>"><span>Client Login</span></a>
             <ul class="main-nav">
                 <li class="nav-cell nav-left">
                     <?php wp_nav_menu( array( 'theme_location' => 'menu-left', 'menu_id' => 'menu-left') ); ?>

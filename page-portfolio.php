@@ -31,8 +31,7 @@
                         </div>
                     </div>
                     <div class="crop square">
-                        <?php $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
-                        <img src="<?php echo $feat_image; ?>" alt="<?php the_title(); ?>"/>
+                        <img src="<?php the_field('image'); ?>" alt="<?php the_title(); ?>"/>
                     </div>
                 </a>
             </div>

@@ -135,6 +135,13 @@ p {
     color:$bronze;
 }
 
+a{
+    color:$rose;
+    &:hover{
+        color: $rose;
+    }
+}
+
 a:hover {}
 
 hr {

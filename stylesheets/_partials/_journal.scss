@@ -15,15 +15,19 @@
         color:$bronze;
     }
     .categories{
+        display:inline-block;
         margin-left:15px;
         padding-left:15px;
-        display:inline-block;
-        font-family:'Libre Baskerville';
-        font-size:18px;
-        color:$bronze;
         border-left:1px solid $bronze;
-        li{
-            display:inline;
+        a{
+            display:inline-block;
+            margin-left:7px;
+            font-family:'Libre Baskerville';
+            font-size:18px;
+            color:$bronze;
+            &:first-child{
+                margin-left:2px;
+            }
         }
     }
 }

@@ -232,6 +232,16 @@ img{
         color:$bronze;
         font-weight:300;
     }
+    .form-control{
+        border-radius:0 !important;
+        border-color:$sand;
+        font-family:'Libre Baskerville';
+        color:$bronze;
+        &:focus{
+            outline: 0;
+            box-shadow: 0 0 8px $rose-opaque;
+        }
+    }
 }
 
 /* Instagram Feed */

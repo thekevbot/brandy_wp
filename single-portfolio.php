@@ -14,7 +14,7 @@
                 <?php the_content(); ?>
             </div>
             <div class="aligncenter" style="margin-top:60px;">
-                <a class="btn btn-gold btn-lg" href="<?php echo home_url(); ?>/services"><span>Return to All Services</span></a>
+                <a class="btn btn-gold btn-lg" href="<?php echo home_url(); ?>/services"><span>Return to Main Gallery</span></a>
             </div>
         </div>
     </section>

@@ -1,21 +1,10 @@
-<?php
-/**
-* Template Name: Journal
-*/
- ?>
-
 <?php get_header(); ?>
-
-<?php if (have_posts()) : ?>
-<?php while (have_posts()) : the_post(); ?>
 
     <section class="container">
         <div class="row">
             <div class="col-md-9">
-                <?php
-                    query_posts( array( 'post_type' => 'post', 'posts_per_page' => -1 ) );
-                    if ( have_posts() ) : while ( have_posts() ) : the_post();
-                ?>
+                <?php if (have_posts()) : ?>
+                <?php while (have_posts()) : the_post(); ?>
                 <article>
                     <div class="article-head aligncenter">
                         <h3><?php the_title(); ?></h3>
@@ -33,15 +22,13 @@
                         <a class="btn btn-gold btn-lg" href="<?php the_permalink();?>"><span>Continue Reading</span></a>
                     </div>
                 </article>
-                <?php endwhile; endif; wp_reset_query(); ?>
+            <?php endwhile; ?>
+            <?php endif; ?>
             </div>
             <div class="col-md-3 sidebar">
                 <?php get_sidebar(); ?>
             </div>
         </div>
     </section>
-
-<?php endwhile; ?>
-<?php endif; ?>
 
 <?php get_footer(); ?>
