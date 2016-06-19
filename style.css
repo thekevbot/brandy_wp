@@ -205,11 +205,12 @@ h1, h2, h3, h4, h5, h6 {
 /* line 88, stylesheets/_partials/_typography.scss */
 h1, h2 {
   font-family: 'Kat Tail';
-  font-size: 60px;
+  font-size: 50px;
   color: #ddbcb0;
+  font-weight: 500;
 }
 
-/* line 94, stylesheets/_partials/_typography.scss */
+/* line 95, stylesheets/_partials/_typography.scss */
 h3 {
   margin-top: 0;
   font-family: 'Raleway';
@@ -219,7 +220,7 @@ h3 {
   font-weight: 400;
   color: #ddbcb0;
 }
-/* line 102, stylesheets/_partials/_typography.scss */
+/* line 103, stylesheets/_partials/_typography.scss */
 h3.script {
   font-family: 'Kat Tail';
   font-size: 48px;
@@ -227,7 +228,7 @@ h3.script {
   letter-spacing: 0;
 }
 
-/* line 113, stylesheets/_partials/_typography.scss */
+/* line 114, stylesheets/_partials/_typography.scss */
 h5 {
   font-family: 'Raleway';
   font-size: 20px;
@@ -237,7 +238,7 @@ h5 {
   color: #767662;
 }
 
-/* line 122, stylesheets/_partials/_typography.scss */
+/* line 123, stylesheets/_partials/_typography.scss */
 h6 {
   font-family: 'Raleway';
   font-size: 16px;
@@ -247,24 +248,24 @@ h6 {
   color: #ddbcb0;
 }
 
-/* line 131, stylesheets/_partials/_typography.scss */
+/* line 132, stylesheets/_partials/_typography.scss */
 p {
   font-family: 'Libre Baskerville';
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 14px;
+  line-height: 28px;
   color: #767662;
 }
 
-/* line 138, stylesheets/_partials/_typography.scss */
+/* line 139, stylesheets/_partials/_typography.scss */
 a {
   color: #ddbcb0;
 }
-/* line 140, stylesheets/_partials/_typography.scss */
+/* line 141, stylesheets/_partials/_typography.scss */
 a:hover {
   color: #ddbcb0;
 }
 
-/* line 147, stylesheets/_partials/_typography.scss */
+/* line 148, stylesheets/_partials/_typography.scss */
 hr {
   width: 80%;
   height: 2px;
@@ -273,29 +274,29 @@ hr {
   background-color: #BBB0A6;
 }
 
-/* line 155, stylesheets/_partials/_typography.scss */
+/* line 156, stylesheets/_partials/_typography.scss */
 ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 160, stylesheets/_partials/_typography.scss */
+/* line 161, stylesheets/_partials/_typography.scss */
 .alignleft {
   text-align: left;
 }
 
-/* line 164, stylesheets/_partials/_typography.scss */
+/* line 165, stylesheets/_partials/_typography.scss */
 .aligncenter {
   text-align: center;
 }
 
-/* line 168, stylesheets/_partials/_typography.scss */
+/* line 169, stylesheets/_partials/_typography.scss */
 .alignright {
   text-align: right;
 }
 
 /* Template Typography */
-/* line 174, stylesheets/_partials/_typography.scss */
+/* line 175, stylesheets/_partials/_typography.scss */
 h1.page-head {
   margin: 0;
   padding: 4px;
@@ -304,7 +305,7 @@ h1.page-head {
   font-weight: 300;
   color: #fff;
 }
-/* line 181, stylesheets/_partials/_typography.scss */
+/* line 182, stylesheets/_partials/_typography.scss */
 h1.page-head span {
   width: 100%;
   height: 100%;
@@ -319,7 +320,7 @@ h1.page-head span {
 /* line 5, stylesheets/_partials/_universal.scss */
 .container {
   width: 100%;
-  max-width: 1600px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -405,7 +406,11 @@ h1.page-head span {
   display: block;
 }
 
-/* line 83, stylesheets/_partials/_universal.scss */
+/* line 82, stylesheets/_partials/_universal.scss */
+.btn {
+  transition: all 0.15s ease-in-out;
+}
+/* line 84, stylesheets/_partials/_universal.scss */
 .btn span {
   width: 100%;
   height: 100%;
@@ -413,7 +418,7 @@ h1.page-head span {
   display: block;
   background-color: #fff;
 }
-/* line 90, stylesheets/_partials/_universal.scss */
+/* line 91, stylesheets/_partials/_universal.scss */
 .btn em {
   display: block;
   font-family: 'Kat Tail';
@@ -421,33 +426,33 @@ h1.page-head span {
   text-transform: none;
   font-size: 72px;
 }
-/* line 98, stylesheets/_partials/_universal.scss */
+/* line 99, stylesheets/_partials/_universal.scss */
 .btn.btn-email .icon {
   font-size: 30px;
   float: left;
   margin: -6px 10px 0 0;
 }
-/* line 104, stylesheets/_partials/_universal.scss */
+/* line 105, stylesheets/_partials/_universal.scss */
 .btn.aligncenter {
   margin: 0 auto;
 }
 
-/* line 109, stylesheets/_partials/_universal.scss */
+/* line 110, stylesheets/_partials/_universal.scss */
 .btn-xs span {
   padding: 5px 20px;
 }
 
-/* line 113, stylesheets/_partials/_universal.scss */
+/* line 114, stylesheets/_partials/_universal.scss */
 .btn-lg span {
   padding: 15px 60px;
 }
 
-/* line 117, stylesheets/_partials/_universal.scss */
+/* line 118, stylesheets/_partials/_universal.scss */
 .btn-xl span {
   padding: 35px 40px 25px 40px;
 }
 
-/* line 121, stylesheets/_partials/_universal.scss */
+/* line 122, stylesheets/_partials/_universal.scss */
 .btn-gold {
   color: #DDBCB0;
   background: -moz-linear-gradient(left, #cda349 0%, #e2c675 22%, #edd6a1 49%, #ebd39a 55%, #e2c675 72%, #cda349 100%);
@@ -459,13 +464,18 @@ h1.page-head span {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cda349', endColorstr='#cda349',GradientType=1 );
   /* IE6-9 */
 }
-/* line 131, stylesheets/_partials/_universal.scss */
+/* line 132, stylesheets/_partials/_universal.scss */
 .btn-gold:focus, .btn-gold:hover {
-  color: #DDBCB0;
+  color: #fff;
+  background: #ddbcb0;
+}
+/* line 135, stylesheets/_partials/_universal.scss */
+.btn-gold:focus span, .btn-gold:hover span {
+  background-color: #ddbcb0;
 }
 
 /* Images */
-/* line 138, stylesheets/_partials/_universal.scss */
+/* line 143, stylesheets/_partials/_universal.scss */
 .mobile-crop {
   width: 100%;
   height: 0;
@@ -473,11 +483,11 @@ h1.page-head span {
   overflow: hidden;
   position: relative;
 }
-/* line 144, stylesheets/_partials/_universal.scss */
+/* line 149, stylesheets/_partials/_universal.scss */
 .mobile-crop.circle {
   border-radius: 50%;
 }
-/* line 147, stylesheets/_partials/_universal.scss */
+/* line 152, stylesheets/_partials/_universal.scss */
 .mobile-crop img {
   position: absolute;
   top: 0;
@@ -485,22 +495,22 @@ h1.page-head span {
   transform: translateX(-50%);
 }
 
-/* line 155, stylesheets/_partials/_universal.scss */
+/* line 160, stylesheets/_partials/_universal.scss */
 .crop {
   width: 100%;
   height: 0;
   position: relative;
   overflow: hidden;
 }
-/* line 160, stylesheets/_partials/_universal.scss */
+/* line 165, stylesheets/_partials/_universal.scss */
 .crop.square {
   padding-top: 100%;
 }
-/* line 163, stylesheets/_partials/_universal.scss */
+/* line 168, stylesheets/_partials/_universal.scss */
 .crop.portrait {
   padding-top: 130%;
 }
-/* line 166, stylesheets/_partials/_universal.scss */
+/* line 171, stylesheets/_partials/_universal.scss */
 .crop img {
   min-width: 100%;
   min-height: 100%;
@@ -510,38 +520,38 @@ h1.page-head span {
   transform: translate(-50%, -50%);
 }
 
-/* line 176, stylesheets/_partials/_universal.scss */
+/* line 181, stylesheets/_partials/_universal.scss */
 img {
   display: block;
 }
-/* line 178, stylesheets/_partials/_universal.scss */
+/* line 183, stylesheets/_partials/_universal.scss */
 img.fw {
   width: 100%;
 }
-/* line 181, stylesheets/_partials/_universal.scss */
+/* line 186, stylesheets/_partials/_universal.scss */
 img.fh {
   width: 100%;
 }
-/* line 184, stylesheets/_partials/_universal.scss */
+/* line 189, stylesheets/_partials/_universal.scss */
 img.aligncenter {
   margin: 0 auto;
 }
 
 @media (min-width: 768px) {
-  /* line 190, stylesheets/_partials/_universal.scss */
+  /* line 195, stylesheets/_partials/_universal.scss */
   .mobile-crop {
     height: auto;
     padding: 0;
     overflow: visible;
   }
-  /* line 194, stylesheets/_partials/_universal.scss */
+  /* line 199, stylesheets/_partials/_universal.scss */
   .mobile-crop img {
     position: static;
     transform: translate(0);
   }
 }
 /* Lists */
-/* line 203, stylesheets/_partials/_universal.scss */
+/* line 208, stylesheets/_partials/_universal.scss */
 .icon-list {
   margin-top: 30px;
   list-style: none;
@@ -550,26 +560,26 @@ img.aligncenter {
   line-height: 30px;
   color: #767662;
 }
-/* line 210, stylesheets/_partials/_universal.scss */
+/* line 215, stylesheets/_partials/_universal.scss */
 .icon-list li {
   margin-bottom: 15px;
 }
-/* line 212, stylesheets/_partials/_universal.scss */
+/* line 217, stylesheets/_partials/_universal.scss */
 .icon-list li .icon {
   margin-right: 15px;
   float: left;
 }
-/* line 215, stylesheets/_partials/_universal.scss */
+/* line 220, stylesheets/_partials/_universal.scss */
 .icon-list li .icon.sm {
   font-size: 24px;
 }
-/* line 218, stylesheets/_partials/_universal.scss */
+/* line 223, stylesheets/_partials/_universal.scss */
 .icon-list li .icon.lg {
   font-size: 36px;
 }
 
 /* Forms */
-/* line 228, stylesheets/_partials/_universal.scss */
+/* line 233, stylesheets/_partials/_universal.scss */
 .form-base label {
   font-family: 'Raleway';
   font-size: 18px;
@@ -577,26 +587,26 @@ img.aligncenter {
   color: #767662;
   font-weight: 300;
 }
-/* line 235, stylesheets/_partials/_universal.scss */
+/* line 240, stylesheets/_partials/_universal.scss */
 .form-base .form-control {
   border-radius: 0 !important;
   border-color: #BBB0A6;
   font-family: 'Libre Baskerville';
   color: #767662;
 }
-/* line 240, stylesheets/_partials/_universal.scss */
+/* line 245, stylesheets/_partials/_universal.scss */
 .form-base .form-control:focus {
   outline: 0;
   box-shadow: 0 0 8px rgba(221, 188, 176, 0.8);
 }
 
 /* Instagram Feed */
-/* line 249, stylesheets/_partials/_universal.scss */
+/* line 254, stylesheets/_partials/_universal.scss */
 .insta-feed {
   width: 100%;
   margin-bottom: 30px;
 }
-/* line 252, stylesheets/_partials/_universal.scss */
+/* line 257, stylesheets/_partials/_universal.scss */
 .insta-feed a {
   height: 0;
   display: inline-block;
@@ -604,7 +614,7 @@ img.aligncenter {
   padding-left: 5px;
   position: relative;
 }
-/* line 258, stylesheets/_partials/_universal.scss */
+/* line 263, stylesheets/_partials/_universal.scss */
 .insta-feed a .insta-meta {
   width: calc(100% - 10px);
   height: calc(100% - 13px);
@@ -615,7 +625,7 @@ img.aligncenter {
   opacity: 0;
   transition: all 0.2s ease-in-out;
 }
-/* line 267, stylesheets/_partials/_universal.scss */
+/* line 272, stylesheets/_partials/_universal.scss */
 .insta-feed a .insta-meta .icon {
   position: absolute;
   top: 50%;
@@ -624,21 +634,21 @@ img.aligncenter {
   font-size: 32px;
   color: #fff;
 }
-/* line 277, stylesheets/_partials/_universal.scss */
+/* line 282, stylesheets/_partials/_universal.scss */
 .insta-feed a:hover .insta-meta {
   opacity: 1;
 }
-/* line 282, stylesheets/_partials/_universal.scss */
+/* line 287, stylesheets/_partials/_universal.scss */
 .insta-feed.col-5 a {
   width: 20%;
   padding-top: 20%;
 }
-/* line 286, stylesheets/_partials/_universal.scss */
+/* line 291, stylesheets/_partials/_universal.scss */
 .insta-feed.col-2 a {
   width: 50%;
   padding-top: 50%;
 }
-/* line 290, stylesheets/_partials/_universal.scss */
+/* line 295, stylesheets/_partials/_universal.scss */
 .insta-feed a img {
   width: 95%;
   position: absolute;
@@ -648,17 +658,17 @@ img.aligncenter {
 }
 
 /* Logo Lists */
-/* line 302, stylesheets/_partials/_universal.scss */
+/* line 307, stylesheets/_partials/_universal.scss */
 .logo-list .wrapper-inner {
   padding: 0 30px;
 }
 
 /* Articles */
-/* line 309, stylesheets/_partials/_universal.scss */
+/* line 314, stylesheets/_partials/_universal.scss */
 article {
   margin-bottom: 60px;
 }
-/* line 311, stylesheets/_partials/_universal.scss */
+/* line 316, stylesheets/_partials/_universal.scss */
 article .featured-img {
   width: 100%;
   height: 0;
@@ -666,7 +676,7 @@ article .featured-img {
   overflow: hidden;
   position: relative;
 }
-/* line 317, stylesheets/_partials/_universal.scss */
+/* line 322, stylesheets/_partials/_universal.scss */
 article .featured-img img {
   width: 100%;
   min-height: 100%;
@@ -704,66 +714,87 @@ header {
   top: 30px;
   right: 0;
   z-index: 1;
+  font-size: 13px;
+  font-weight: 400;
 }
 
-/* line 28, stylesheets/_partials/_navigation.scss */
+/* line 30, stylesheets/_partials/_navigation.scss */
 .main-nav-wrapper ul {
   padding: 0;
 }
 
-/* line 32, stylesheets/_partials/_navigation.scss */
+/* line 34, stylesheets/_partials/_navigation.scss */
 ul.main-nav {
   width: 100%;
   display: table;
   position: relative;
   list-style: none;
   font-family: 'Raleway';
-  font-size: 15px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 400;
   text-align: center;
   text-transform: uppercase;
 }
-/* line 42, stylesheets/_partials/_navigation.scss */
+/* line 44, stylesheets/_partials/_navigation.scss */
 ul.main-nav li {
   display: inline-block;
 }
-/* line 44, stylesheets/_partials/_navigation.scss */
+/* line 46, stylesheets/_partials/_navigation.scss */
 ul.main-nav li a {
   color: #767662;
+  text-decoration: none;
+  transition: all 0.15s ease-in-out;
 }
-
 /* line 50, stylesheets/_partials/_navigation.scss */
-.nav-cell {
-  display: table-cell;
-  vertical-align: middle;
+ul.main-nav li a:hover {
+  color: #ddbcb0;
 }
 
-/* line 55, stylesheets/_partials/_navigation.scss */
-.nav-left, .nav-right {
-  width: 31.5%;
+/* line 58, stylesheets/_partials/_navigation.scss */
+.nav-cell.nav-left {
+  left: 0;
 }
-
-/* line 59, stylesheets/_partials/_navigation.scss */
+/* line 61, stylesheets/_partials/_navigation.scss */
+.nav-cell.nav-right {
+  right: 0;
+}
+/* line 64, stylesheets/_partials/_navigation.scss */
 .nav-cell ul li {
   width: 32.5%;
   text-align: center;
 }
-
-/* line 64, stylesheets/_partials/_navigation.scss */
-.nav-logo {
-  width: 35%;
-  max-width: 320px;
-  margin: 0 1%;
-  padding: 20px;
-  border: 2px solid #d6afa0;
+/* line 67, stylesheets/_partials/_navigation.scss */
+.nav-cell ul li:first-child {
+  text-align: left;
 }
 /* line 70, stylesheets/_partials/_navigation.scss */
+.nav-cell ul li:last-child {
+  text-align: right;
+}
+
+/* line 76, stylesheets/_partials/_navigation.scss */
+.nav-left, .nav-right {
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* line 83, stylesheets/_partials/_navigation.scss */
+.nav-logo {
+  width: 40%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #ddbcb0;
+}
+/* line 89, stylesheets/_partials/_navigation.scss */
 .nav-logo img {
   width: 100%;
 }
 
 @media (min-width: 768px) {
-  /* line 76, stylesheets/_partials/_navigation.scss */
+  /* line 95, stylesheets/_partials/_navigation.scss */
   .btn-mobile-menu {
     display: none !important;
   }
@@ -968,7 +999,7 @@ footer {
   font-family: 'Raleway';
   text-align: center;
   background-image: url("img/bg-footer.png");
-  background-position: center;
+  background-position: 42% center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #DDBCB0;

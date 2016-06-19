@@ -87,8 +87,9 @@ h1,h2,h3,h4,h5,h6{
 
 h1, h2 {
     font-family: 'Kat Tail';
-    font-size: 60px;
+    font-size: 50px;
     color: $rose;
+    font-weight:500;
 }
 
 h3 {
@@ -130,8 +131,8 @@ h6{
 
 p {
     font-family: 'Libre Baskerville';
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 14px;
+    line-height: 28px;
     color:$bronze;
 }
 

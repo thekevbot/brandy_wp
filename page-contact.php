@@ -25,7 +25,7 @@
                     <li><i class="icon icon-phone lg"></i><?php the_field('phone_number', 'option');?></li>
                     <li><i class="icon icon-mail lg"></i><a href="mailto:<?php the_field('email', 'option');?>"><?php the_field('email', 'option');?></a></li>
                 </ul>
-                <img class="aligncenter" src="<?php bloginfo('template_directory'); ?>/img/logo-lbb.png" alt="Little Black Book Member 2016" style="width:100%; max-width:275px; margin-top:60px;" />
+                <img class="aligncenter" src="<?php bloginfo('template_directory'); ?>/img/logo-lbb.png" alt="Little Black Book Member 2016" style="margin-top:60px;" />
             </div>
             <div class="col-md-7">
                 <form class="form-base" id="c-form" action='https://www.getform.org/f/4a71dba0-4a34-41d1-b828-c3b29fd0b417' method="POST" validate>

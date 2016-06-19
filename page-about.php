@@ -37,10 +37,17 @@
                 <h3 style="margin-bottom:60px;"><?php the_field('features_title'); ?></h3>
                 <div class="logo-list wrapper" style="margin-bottom:60px;">
                     <div class="wrapper-inner">
-                        <img class="fw" src="<?php bloginfo('template_directory'); ?>/img/logo-adore.png" alt="Adore Okanagen Wedding &amp; Style Magazine"/>
+                        <a href="http://issuu.com/adore.magazine/docs/adore-springsummer-2016-final/3?e=8326376/34597566" target="_blank">
+                            <img class="fw" src="<?php bloginfo('template_directory'); ?>/img/logo-adore.png" alt="Adore Okanagen Wedding &amp; Style Magazine"/>
+                        </a>
                     </div>
                     <div class="wrapper-inner">
-                        <img class="fw" src="<?php bloginfo('template_directory'); ?>/img/logo-smp.png" alt="Style Me Pretty"/>
+                        <a href="http://www.stylemepretty.com/canada-weddings/british-columbia/penticton/2015/10/12/navy-copper-mountaintop-wedding-inspiration/" target="_blank">
+                            <img class="fw" src="<?php bloginfo('template_directory'); ?>/img/logo-smp.png" alt="Style Me Pretty"/>
+                        </a>
+                    </div>
+                    <div class="wrapper-inner">
+                        <img class="fw" src="<?php bloginfo('template_directory'); ?>/img/logo-vv.png" alt="Vale &amp; Vine"/>
                     </div>
                 </div>
             </div>
